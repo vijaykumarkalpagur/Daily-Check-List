@@ -1,19 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.trainer.qa.utility.Retry"/>
+    <listener class-name="com.trainer.qa.utility.ExtendReport"/>
+  </listeners>
+  <test thread-count="5" name="Logins Test">
     <classes>
-      <class name="com.trainer.qa.testcases.LoginTest"/>
+      <class name="dailychecklist.LoginTest"/>
+      <class name="dailychecklist.FacebookLoginTest"/>
+      <class name="dailychecklist.GmailLoginTest"/>
     </classes>
-  </test> <!-- Default test -->
-  <test name="Default test(failed)">
+  </test> <!-- Logins Test -->
+  <test thread-count="5" name="Create Schedule Test">
     <classes>
-      <class name="com.trainer.qa.testcases.LoginTest">
+      <class name="dailychecklist.SingleWorkoutSession"/>
+      <class name="dailychecklist.DailyWorkoutSessionTest"/>
+      <class name="dailychecklist.WeeklyWorkoutSessionsTest"/>
+      <class name="dailychecklist.MonthlyWorkoutSession"/>
+      <class name="dailychecklist.CustomWorkoutSessionsTest"/>
+    </classes>
+  </test> <!-- Create Schedule Test -->
+  <test name="Logins Test(failed)">
+    <classes>
+      <class name="dailychecklist.GmailLoginTest">
         <methods>
-          <include name="TrainerLogin" invocation-numbers="0"/>
-          <include name="teardown"/>
+          <include name="GmailLogin"/>
+          <include name="TrainerSocialBrowser"/>
         </methods>
-      </class> <!-- com.trainer.qa.testcases.LoginTest -->
+      </class> <!-- dailychecklist.GmailLoginTest -->
+      <class name="dailychecklist.SingleWorkoutSession">
+        <methods>
+          <include name="SingleSessionCreatedsuccesfully"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- dailychecklist.SingleWorkoutSession -->
+      <class name="dailychecklist.CustomWorkoutSessionsTest">
+        <methods>
+          <include name="CustomSessionCreatedsuccesfully"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- dailychecklist.CustomWorkoutSessionsTest -->
+      <class name="dailychecklist.WeeklyWorkoutSessionsTest">
+        <methods>
+          <include name="WeeklySessionCreatedsuccesfully"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- dailychecklist.WeeklyWorkoutSessionsTest -->
+      <class name="dailychecklist.FacebookLoginTest">
+        <methods>
+          <include name="TrainerSocialBrowser"/>
+          <include name="FacebookLogin"/>
+        </methods>
+      </class> <!-- dailychecklist.FacebookLoginTest -->
+      <class name="dailychecklist.MonthlyWorkoutSession">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="MonthlySessionCreatedsuccesfully"/>
+        </methods>
+      </class> <!-- dailychecklist.MonthlyWorkoutSession -->
+      <class name="dailychecklist.LoginTest">
+        <methods>
+          <include name="OpenBrowser"/>
+          <include name="TrainerLogin"/>
+        </methods>
+      </class> <!-- dailychecklist.LoginTest -->
+      <class name="dailychecklist.DailyWorkoutSessionTest">
+        <methods>
+          <include name="DailySessionCreatedsuccesfully"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- dailychecklist.DailyWorkoutSessionTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Logins Test(failed) -->
+  <test name="Create Schedule Test(failed)">
+    <classes>
+      <class name="dailychecklist.GmailLoginTest">
+        <methods>
+          <include name="TrainerSocialBrowser"/>
+        </methods>
+      </class> <!-- dailychecklist.GmailLoginTest -->
+      <class name="dailychecklist.SingleWorkoutSession">
+        <methods>
+          <include name="SingleSessionCreatedsuccesfully"/>
+          <include name="OpenBrowser"/>
+          <include name="singleWorkoutSessionNormalLogin" invocation-numbers="0"/>
+          <include name="singleWorkoutSessionFacebookLogin"/>
+          <include name="singleWorkoutSessionGmailLogin"/>
+        </methods>
+      </class> <!-- dailychecklist.SingleWorkoutSession -->
+      <class name="dailychecklist.CustomWorkoutSessionsTest">
+        <methods>
+          <include name="CustomWorkoutSessionNormalLogin" invocation-numbers="0"/>
+          <include name="CustomWorkoutSessionFacebookLogin"/>
+          <include name="CustomWorkoutSessionGmailLogin"/>
+          <include name="CustomSessionCreatedsuccesfully"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- dailychecklist.CustomWorkoutSessionsTest -->
+      <class name="dailychecklist.WeeklyWorkoutSessionsTest">
+        <methods>
+          <include name="WeeklySessionCreatedsuccesfully"/>
+          <include name="WeeklyWorkoutSessionFacebookLogin"/>
+          <include name="WeeklyWorkoutSessionNormalLogin" invocation-numbers="0"/>
+          <include name="OpenBrowser"/>
+          <include name="WeeklyWorkoutSessionGmailLogin"/>
+        </methods>
+      </class> <!-- dailychecklist.WeeklyWorkoutSessionsTest -->
+      <class name="dailychecklist.FacebookLoginTest">
+        <methods>
+          <include name="TrainerSocialBrowser"/>
+        </methods>
+      </class> <!-- dailychecklist.FacebookLoginTest -->
+      <class name="dailychecklist.MonthlyWorkoutSession">
+        <methods>
+          <include name="MonthlyWorkoutSessionNormalLogin" invocation-numbers="0"/>
+          <include name="OpenBrowser"/>
+          <include name="MonthlyWorkoutSessionGmailLogin"/>
+          <include name="MonthlySessionCreatedsuccesfully"/>
+          <include name="MonthlyWorkoutSessionFacebookLogin"/>
+        </methods>
+      </class> <!-- dailychecklist.MonthlyWorkoutSession -->
+      <class name="dailychecklist.LoginTest">
+        <methods>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- dailychecklist.LoginTest -->
+      <class name="dailychecklist.DailyWorkoutSessionTest">
+        <methods>
+          <include name="DailyWorkoutSessionGmailLogin"/>
+          <include name="DailySessionCreatedsuccesfully"/>
+          <include name="DailyWorkoutSessionNormalLogin" invocation-numbers="0"/>
+          <include name="OpenBrowser"/>
+          <include name="DailyWorkoutSessionFacebookLogin"/>
+        </methods>
+      </class> <!-- dailychecklist.DailyWorkoutSessionTest -->
+    </classes>
+  </test> <!-- Create Schedule Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

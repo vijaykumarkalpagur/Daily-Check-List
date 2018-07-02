@@ -45,9 +45,6 @@ compile group: 'org.apache.commons', name: 'commons-email', version: '1.3.1'
 // https://mvnrepository.com/artifact/com.relevantcodes/extentreports
 compile group: 'com.relevantcodes', name: 'extentreports', version: '2.40.2'
 
-// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-htmlunit-driver
-compile group: 'org.seleniumhq.selenium', name: 'selenium-htmlunit-driver', version: '2.52.0'
-
 // https://mvnrepository.com/artifact/com.relevantcodes/extentreports
 compile group: 'com.relevantcodes', name: 'extentreports', version: '2.40.2'
 

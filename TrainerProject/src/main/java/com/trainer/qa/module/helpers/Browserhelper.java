@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
@@ -29,7 +28,6 @@ public class Browserhelper {
 		if(browserName.equalsIgnoreCase("Chrome")){
 				System.setProperty("webdriver.chrome.driver", "C:\\Users\\Vijay\\workspace\\TrainerProject\\chromedriver.exe");	
 				driver = new ChromeDriver();
-//				driver = new HtmlUnitDriver();
 				Log.info("Chrome Driver initiated ");}
 		
 		else if(browserName.equalsIgnoreCase("FireFox")){

@@ -1,17 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="3" failed="15" total="18" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22922" started-at="2018-07-02T05:57:42Z" finished-at="2018-07-02T05:58:05Z">
+  <suite name="Suite" duration-ms="22174" started-at="2018-07-02T06:15:08Z" finished-at="2018-07-02T06:15:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22922" started-at="2018-07-02T05:57:42Z" finished-at="2018-07-02T05:58:05Z">
-      <class name="com.trainer.qa.testcases.LoginTest">
-        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:com.trainer.qa.testcases.LoginTest@ae45eb6]" name="OpenBrowser" duration-ms="20827" started-at="2018-07-02T11:27:42Z" finished-at="2018-07-02T11:28:02Z">
+    <test name="Logins Test" duration-ms="2088" started-at="2018-07-02T06:15:08Z" finished-at="2018-07-02T06:15:10Z">
+      <class name="dailychecklist.LoginTest">
+        <test-method status="FAIL" signature="OpenBrowser()[pri:0, instance:dailychecklist.LoginTest@91161c7]" name="OpenBrowser" is-config="true" duration-ms="0" started-at="2018-07-02T11:45:08Z" finished-at="2018-07-02T11:45:08Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.module.helpers.Browserhelper.openBrowser(Browserhelper.java:30)
+	at dailychecklist.LoginTest.OpenBrowser(LoginTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method status="FAIL" signature="TrainerLogin(java.lang.String, java.lang.String)[pri:0, instance:com.trainer.qa.testcases.LoginTest@ae45eb6]" name="TrainerLogin" duration-ms="52" started-at="2018-07-02T11:28:02Z" data-provider="UserLogin" finished-at="2018-07-02T11:28:03Z">
+        <test-method status="SKIP" signature="TrainerLogin(java.lang.String, java.lang.String)[pri:0, instance:dailychecklist.LoginTest@91161c7]" name="TrainerLogin" duration-ms="2" started-at="2018-07-02T11:45:09Z" data-provider="UserLogin" finished-at="2018-07-02T11:45:09Z">
           <params>
             <param index="0">
               <value>
@@ -24,28 +88,245 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TrainerLogin -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:dailychecklist.LoginTest@91161c7]" name="teardown" is-config="true" duration-ms="0" started-at="2018-07-02T11:45:09Z" finished-at="2018-07-02T11:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- dailychecklist.LoginTest -->
+      <class name="dailychecklist.FacebookLoginTest">
+        <test-method status="FAIL" signature="TrainerSocialBrowser()[pri:0, instance:dailychecklist.FacebookLoginTest@604ed9f0]" name="TrainerSocialBrowser" is-config="true" duration-ms="0" started-at="2018-07-02T11:45:09Z" finished-at="2018-07-02T11:45:09Z">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[You may only interact with visible elements
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'Vijay', ip: '192.168.100.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: unknown]]>
+              <![CDATA[org/json/JSONObject]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: You may only interact with visible elements
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'Vijay', ip: '192.168.100.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.verifyCanInteractWithElement(HtmlUnitWebElement.java:283)
-	at org.openqa.selenium.htmlunit.HtmlUnitWebElement.sendKeys(HtmlUnitWebElement.java:327)
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.module.helpers.Browserhelper.openBrowser(Browserhelper.java:30)
+	at dailychecklist.FacebookLoginTest.TrainerSocialBrowser(FacebookLoginTest.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-	at com.trainer.qa.module.actions.LoginAction.TrainerLogin(LoginAction.java:17)
-	at com.trainer.qa.testcases.LoginTest.TrainerLogin(LoginTest.java:22)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TrainerSocialBrowser -->
+        <test-method status="SKIP" signature="FacebookLogin(java.lang.String, java.lang.String)[pri:0, instance:dailychecklist.FacebookLoginTest@604ed9f0]" name="FacebookLogin" duration-ms="6" started-at="2018-07-02T11:45:09Z" data-provider="FacebookLogin" finished-at="2018-07-02T11:45:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testingsunilkumar@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing@12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacebookLogin -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:dailychecklist.FacebookLoginTest@604ed9f0]" name="teardown" is-config="true" duration-ms="0" started-at="2018-07-02T11:45:09Z" finished-at="2018-07-02T11:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- dailychecklist.FacebookLoginTest -->
+      <class name="dailychecklist.GmailLoginTest">
+        <test-method status="FAIL" signature="TrainerSocialBrowser()[pri:0, instance:dailychecklist.GmailLoginTest@6a4f787b]" name="TrainerSocialBrowser" is-config="true" duration-ms="0" started-at="2018-07-02T11:45:09Z" finished-at="2018-07-02T11:45:09Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.module.helpers.Browserhelper.openBrowser(Browserhelper.java:30)
+	at dailychecklist.GmailLoginTest.TrainerSocialBrowser(GmailLoginTest.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TrainerSocialBrowser -->
+        <test-method status="SKIP" signature="GmailLogin(java.lang.String, java.lang.String)[pri:0, instance:dailychecklist.GmailLoginTest@6a4f787b]" name="GmailLogin" duration-ms="6" started-at="2018-07-02T11:45:10Z" data-provider="GmailLogin" finished-at="2018-07-02T11:45:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testingsunilkumar@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing@12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GmailLogin -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:dailychecklist.GmailLoginTest@6a4f787b]" name="teardown" is-config="true" duration-ms="0" started-at="2018-07-02T11:45:10Z" finished-at="2018-07-02T11:45:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- dailychecklist.GmailLoginTest -->
+    </test> <!-- Logins Test -->
+    <test name="Create Schedule Test" duration-ms="20055" started-at="2018-07-02T06:15:10Z" finished-at="2018-07-02T06:15:30Z">
+      <class name="dailychecklist.SingleWorkoutSession">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:dailychecklist.SingleWorkoutSession@4f7d0008]" name="OpenBrowser" is-config="true" duration-ms="1" started-at="2018-07-02T11:45:10Z" finished-at="2018-07-02T11:45:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="FAIL" signature="singleWorkoutSessionNormalLogin(java.lang.String, java.lang.String)[pri:1, instance:dailychecklist.SingleWorkoutSession@4f7d0008]" name="singleWorkoutSessionNormalLogin" duration-ms="518" started-at="2018-07-02T11:45:10Z" data-provider="UserLogin" finished-at="2018-07-02T11:45:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saikumaratmakur@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.module.helpers.Browserhelper.openBrowser(Browserhelper.java:30)
+	at dailychecklist.SingleWorkoutSession.singleWorkoutSessionNormalLogin(SingleWorkoutSession.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,40 +351,60 @@ Driver info: driver.version: unknown
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TrainerLogin -->
-        <test-method status="FAIL" signature="teardown()[pri:0, instance:com.trainer.qa.testcases.LoginTest@ae45eb6]" name="teardown" is-config="true" duration-ms="0" started-at="2018-07-02T11:28:03Z" finished-at="2018-07-02T11:28:03Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        </test-method> <!-- singleWorkoutSessionNormalLogin -->
+        <test-method status="FAIL" signature="singleWorkoutSessionGmailLogin()[pri:2, instance:dailychecklist.SingleWorkoutSession@4f7d0008]" name="singleWorkoutSessionGmailLogin" duration-ms="527" started-at="2018-07-02T11:45:11Z" finished-at="2018-07-02T11:45:11Z">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[Window is closed
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'Vijay', ip: '192.168.100.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: HtmlUnitDriver]]>
+              <![CDATA[org/json/JSONObject]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Window is closed
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'Vijay', ip: '192.168.100.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: driver.version: HtmlUnitDriver
-	at org.openqa.selenium.htmlunit.HtmlUnitDriver.getCurrentWindow(HtmlUnitDriver.java:1402)
-	at org.openqa.selenium.htmlunit.HtmlUnitAlert.close(HtmlUnitAlert.java:99)
-	at org.openqa.selenium.htmlunit.HtmlUnitDriver.quit(HtmlUnitDriver.java:650)
-	at com.trainer.qa.module.actions.CloseBrowserAction.Application(CloseBrowserAction.java:11)
-	at com.trainer.qa.testcases.LoginTest.teardown(LoginTest.java:28)
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.GmailLoginSingleSessionAction.SingleSessionwithGmailLogin(GmailLoginSingleSessionAction.java:24)
+	at dailychecklist.SingleWorkoutSession.singleWorkoutSessionGmailLogin(SingleWorkoutSession.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:232)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:115)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:782)
 	at org.testng.TestRunner.run(TestRunner.java:632)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
@@ -118,13 +419,995 @@ Driver info: driver.version: HtmlUnitDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.trainer.qa.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- singleWorkoutSessionGmailLogin -->
+        <test-method status="FAIL" signature="singleWorkoutSessionFacebookLogin()[pri:3, instance:dailychecklist.SingleWorkoutSession@4f7d0008]" name="singleWorkoutSessionFacebookLogin" duration-ms="533" started-at="2018-07-02T11:45:11Z" finished-at="2018-07-02T11:45:12Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.FacebookLoginSingleSessionAction.SingleSessionwithFacebookLogin(FacebookLoginSingleSessionAction.java:24)
+	at dailychecklist.SingleWorkoutSession.singleWorkoutSessionFacebookLogin(SingleWorkoutSession.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singleWorkoutSessionFacebookLogin -->
+        <test-method status="PASS" signature="SingleSessionCreatedsuccesfully()[pri:0, instance:dailychecklist.SingleWorkoutSession@4f7d0008]" name="SingleSessionCreatedsuccesfully" is-config="true" duration-ms="3013" started-at="2018-07-02T11:45:12Z" finished-at="2018-07-02T11:45:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SingleSessionCreatedsuccesfully -->
+      </class> <!-- dailychecklist.SingleWorkoutSession -->
+      <class name="dailychecklist.MonthlyWorkoutSession">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:dailychecklist.MonthlyWorkoutSession@42dafa95]" name="OpenBrowser" is-config="true" duration-ms="6" started-at="2018-07-02T11:45:21Z" finished-at="2018-07-02T11:45:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="FAIL" signature="MonthlyWorkoutSessionNormalLogin(java.lang.String, java.lang.String)[pri:1, instance:dailychecklist.MonthlyWorkoutSession@42dafa95]" name="MonthlyWorkoutSessionNormalLogin" duration-ms="525" started-at="2018-07-02T11:45:21Z" data-provider="UserLogin" finished-at="2018-07-02T11:45:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saikumaratmakur@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.module.helpers.Browserhelper.openBrowser(Browserhelper.java:30)
+	at dailychecklist.MonthlyWorkoutSession.MonthlyWorkoutSessionNormalLogin(MonthlyWorkoutSession.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MonthlyWorkoutSessionNormalLogin -->
+        <test-method status="FAIL" signature="MonthlyWorkoutSessionGmailLogin()[pri:2, instance:dailychecklist.MonthlyWorkoutSession@42dafa95]" name="MonthlyWorkoutSessionGmailLogin" duration-ms="530" started-at="2018-07-02T11:45:21Z" finished-at="2018-07-02T11:45:22Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.GmailLoginMonthlySessionAction.MontlySessionwithGmailLogin(GmailLoginMonthlySessionAction.java:22)
+	at dailychecklist.MonthlyWorkoutSession.MonthlyWorkoutSessionGmailLogin(MonthlyWorkoutSession.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MonthlyWorkoutSessionGmailLogin -->
+        <test-method status="FAIL" signature="MonthlyWorkoutSessionFacebookLogin()[pri:3, instance:dailychecklist.MonthlyWorkoutSession@42dafa95]" name="MonthlyWorkoutSessionFacebookLogin" duration-ms="532" started-at="2018-07-02T11:45:22Z" finished-at="2018-07-02T11:45:22Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.FacebookLoginMontlySessionAction.MonthlySessionwithFacebookLogin(FacebookLoginMontlySessionAction.java:22)
+	at dailychecklist.MonthlyWorkoutSession.MonthlyWorkoutSessionFacebookLogin(MonthlyWorkoutSession.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MonthlyWorkoutSessionFacebookLogin -->
+        <test-method status="PASS" signature="MonthlySessionCreatedsuccesfully()[pri:0, instance:dailychecklist.MonthlyWorkoutSession@42dafa95]" name="MonthlySessionCreatedsuccesfully" is-config="true" duration-ms="3002" started-at="2018-07-02T11:45:23Z" finished-at="2018-07-02T11:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MonthlySessionCreatedsuccesfully -->
+      </class> <!-- dailychecklist.MonthlyWorkoutSession -->
+      <class name="dailychecklist.WeeklyWorkoutSessionsTest">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:dailychecklist.WeeklyWorkoutSessionsTest@589838eb]" name="OpenBrowser" is-config="true" duration-ms="7" started-at="2018-07-02T11:45:19Z" finished-at="2018-07-02T11:45:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="FAIL" signature="WeeklyWorkoutSessionNormalLogin(java.lang.String, java.lang.String)[pri:1, instance:dailychecklist.WeeklyWorkoutSessionsTest@589838eb]" name="WeeklyWorkoutSessionNormalLogin" duration-ms="527" started-at="2018-07-02T11:45:19Z" data-provider="UserLogin" finished-at="2018-07-02T11:45:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saikumaratmakur@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.module.helpers.Browserhelper.openBrowser(Browserhelper.java:30)
+	at dailychecklist.WeeklyWorkoutSessionsTest.WeeklyWorkoutSessionNormalLogin(WeeklyWorkoutSessionsTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WeeklyWorkoutSessionNormalLogin -->
+        <test-method status="FAIL" signature="WeeklyWorkoutSessionGmailLogin()[pri:2, instance:dailychecklist.WeeklyWorkoutSessionsTest@589838eb]" name="WeeklyWorkoutSessionGmailLogin" duration-ms="528" started-at="2018-07-02T11:45:20Z" finished-at="2018-07-02T11:45:20Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.GmailLoginWeeklySessionAction.WeeklySessionwithGmailLogin(GmailLoginWeeklySessionAction.java:23)
+	at dailychecklist.WeeklyWorkoutSessionsTest.WeeklyWorkoutSessionGmailLogin(WeeklyWorkoutSessionsTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WeeklyWorkoutSessionGmailLogin -->
+        <test-method status="FAIL" signature="WeeklyWorkoutSessionFacebookLogin()[pri:3, instance:dailychecklist.WeeklyWorkoutSessionsTest@589838eb]" name="WeeklyWorkoutSessionFacebookLogin" duration-ms="522" started-at="2018-07-02T11:45:20Z" finished-at="2018-07-02T11:45:21Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.FacebookLoginWeeklySessionAction.WeeklySessionwithFacebookLogin(FacebookLoginWeeklySessionAction.java:24)
+	at dailychecklist.WeeklyWorkoutSessionsTest.WeeklyWorkoutSessionFacebookLogin(WeeklyWorkoutSessionsTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WeeklyWorkoutSessionFacebookLogin -->
+        <test-method status="PASS" signature="WeeklySessionCreatedsuccesfully()[pri:0, instance:dailychecklist.WeeklyWorkoutSessionsTest@589838eb]" name="WeeklySessionCreatedsuccesfully" is-config="true" duration-ms="2" started-at="2018-07-02T11:45:21Z" finished-at="2018-07-02T11:45:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WeeklySessionCreatedsuccesfully -->
+      </class> <!-- dailychecklist.WeeklyWorkoutSessionsTest -->
+      <class name="dailychecklist.DailyWorkoutSessionTest">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:dailychecklist.DailyWorkoutSessionTest@271053e1]" name="OpenBrowser" is-config="true" duration-ms="6" started-at="2018-07-02T11:45:15Z" finished-at="2018-07-02T11:45:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="FAIL" signature="DailyWorkoutSessionNormalLogin(java.lang.String, java.lang.String)[pri:1, instance:dailychecklist.DailyWorkoutSessionTest@271053e1]" name="DailyWorkoutSessionNormalLogin" duration-ms="535" started-at="2018-07-02T11:45:15Z" data-provider="UserLogin" finished-at="2018-07-02T11:45:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saikumaratmakur@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.module.helpers.Browserhelper.openBrowser(Browserhelper.java:30)
+	at dailychecklist.DailyWorkoutSessionTest.DailyWorkoutSessionNormalLogin(DailyWorkoutSessionTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DailyWorkoutSessionNormalLogin -->
+        <test-method status="FAIL" signature="DailyWorkoutSessionGmailLogin()[pri:2, instance:dailychecklist.DailyWorkoutSessionTest@271053e1]" name="DailyWorkoutSessionGmailLogin" duration-ms="538" started-at="2018-07-02T11:45:15Z" finished-at="2018-07-02T11:45:16Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.GmailLoginDailySessionAction.DailySessionwithGmailLogin(GmailLoginDailySessionAction.java:22)
+	at dailychecklist.DailyWorkoutSessionTest.DailyWorkoutSessionGmailLogin(DailyWorkoutSessionTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DailyWorkoutSessionGmailLogin -->
+        <test-method status="FAIL" signature="DailyWorkoutSessionFacebookLogin()[pri:3, instance:dailychecklist.DailyWorkoutSessionTest@271053e1]" name="DailyWorkoutSessionFacebookLogin" duration-ms="531" started-at="2018-07-02T11:45:16Z" finished-at="2018-07-02T11:45:16Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.FacebookLoginDailySessionAction.DailySessionwithFacebookLogin(FacebookLoginDailySessionAction.java:22)
+	at dailychecklist.DailyWorkoutSessionTest.DailyWorkoutSessionFacebookLogin(DailyWorkoutSessionTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DailyWorkoutSessionFacebookLogin -->
+        <test-method status="PASS" signature="DailySessionCreatedsuccesfully()[pri:0, instance:dailychecklist.DailyWorkoutSessionTest@271053e1]" name="DailySessionCreatedsuccesfully" is-config="true" duration-ms="3001" started-at="2018-07-02T11:45:16Z" finished-at="2018-07-02T11:45:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DailySessionCreatedsuccesfully -->
+      </class> <!-- dailychecklist.DailyWorkoutSessionTest -->
+      <class name="dailychecklist.CustomWorkoutSessionsTest">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:dailychecklist.CustomWorkoutSessionsTest@6500df86]" name="OpenBrowser" is-config="true" duration-ms="8" started-at="2018-07-02T11:45:26Z" finished-at="2018-07-02T11:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="FAIL" signature="CustomWorkoutSessionNormalLogin(java.lang.String, java.lang.String)[pri:1, instance:dailychecklist.CustomWorkoutSessionsTest@6500df86]" name="CustomWorkoutSessionNormalLogin" duration-ms="513" started-at="2018-07-02T11:45:26Z" data-provider="UserLogin" finished-at="2018-07-02T11:45:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saikumaratmakur@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.module.helpers.Browserhelper.openBrowser(Browserhelper.java:30)
+	at dailychecklist.CustomWorkoutSessionsTest.CustomWorkoutSessionNormalLogin(CustomWorkoutSessionsTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomWorkoutSessionNormalLogin -->
+        <test-method status="FAIL" signature="CustomWorkoutSessionGmailLogin()[pri:2, instance:dailychecklist.CustomWorkoutSessionsTest@6500df86]" name="CustomWorkoutSessionGmailLogin" duration-ms="536" started-at="2018-07-02T11:45:26Z" finished-at="2018-07-02T11:45:27Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.GmailLoginCustomSessionAction.CustomSessionwithGmailLogin(GmailLoginCustomSessionAction.java:23)
+	at dailychecklist.CustomWorkoutSessionsTest.CustomWorkoutSessionGmailLogin(CustomWorkoutSessionsTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomWorkoutSessionGmailLogin -->
+        <test-method status="FAIL" signature="CustomWorkoutSessionFacebookLogin()[pri:3, instance:dailychecklist.CustomWorkoutSessionsTest@6500df86]" name="CustomWorkoutSessionFacebookLogin" duration-ms="543" started-at="2018-07-02T11:45:27Z" finished-at="2018-07-02T11:45:27Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/json/JSONObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/json/JSONObject
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.privateGetMethodRecursive(Unknown Source)
+	at java.lang.Class.getMethod0(Unknown Source)
+	at java.lang.Class.getMethod(Unknown Source)
+	at org.openqa.selenium.remote.BeanToJsonConverter.getMethod(BeanToJsonConverter.java:246)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:183)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:189)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:143)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convertObject(BeanToJsonConverter.java:86)
+	at org.openqa.selenium.remote.BeanToJsonConverter.convert(BeanToJsonConverter.java:66)
+	at org.openqa.selenium.remote.http.JsonHttpCommandCodec.encode(JsonHttpCommandCodec.java:228)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:181)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:160)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:149)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+	at com.trainer.qa.DailyChecklistActions.FacebookLoginCustomSessionAction.CustomSessionwithFacebookLogin(FacebookLoginCustomSessionAction.java:22)
+	at dailychecklist.CustomWorkoutSessionsTest.CustomWorkoutSessionFacebookLogin(CustomWorkoutSessionsTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.json.JSONObject
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomWorkoutSessionFacebookLogin -->
+        <test-method status="PASS" signature="CustomSessionCreatedsuccesfully()[pri:0, instance:dailychecklist.CustomWorkoutSessionsTest@6500df86]" name="CustomSessionCreatedsuccesfully" is-config="true" duration-ms="3002" started-at="2018-07-02T11:45:27Z" finished-at="2018-07-02T11:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomSessionCreatedsuccesfully -->
+      </class> <!-- dailychecklist.CustomWorkoutSessionsTest -->
+    </test> <!-- Create Schedule Test -->
+  </suite> <!-- Suite -->
 </testng-results>

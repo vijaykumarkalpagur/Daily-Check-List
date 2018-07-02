@@ -1411,3 +1411,39 @@
 2018-07-02 11:27:46,780 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/home.css' [5367:32] Error in expression. (Invalid token ".". Was expecting one of: <S>, <NUMBER>, "inherit", <IDENT>, <STRING>, ")", ":", "-", "=", <PLUS>, <COMMA>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
 2018-07-02 11:27:47,668 - Log -INFO - Clicked action performed on SIGNUP AS TRAINER button
 2018-07-02 11:27:57,940 - Log -INFO - Clicked action performed on SIGNUP/LOGINbutton
+2018-07-02 11:44:20,577 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:44:25,189 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:44:26,800 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:45:15,166 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:45:19,796 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:45:21,395 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:45:26,002 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:45:30,614 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:48:57,185 - Log -INFO - Chrome Driver initiated 
+2018-07-02 11:49:20,029 - Log -INFO - Chrome Driver initiated 
+2018-07-02 11:49:32,645 - Log -INFO - Fitbase home page opened
+2018-07-02 11:49:34,063 - Log -INFO - Clicked action performed on SIGNUP AS TRAINER button
+2018-07-02 11:49:50,291 - Log -INFO - Clicked action performed on SIGNUP/LOGINbutton
+2018-07-02 11:49:55,459 - Log -INFO - Entered Trainer valid username
+2018-07-02 11:49:55,597 - Log -INFO - Entered Trainer valid Password
+2018-07-02 11:49:58,980 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:50:01,922 - Log -INFO - Chrome Driver initiated 
+2018-07-02 11:50:09,789 - Log -INFO - Fitbase home page opened
+2018-07-02 11:50:11,098 - Log -INFO - Clicked action performed on SIGNUP AS TRAINER button
+2018-07-02 11:50:22,222 - Log -INFO - Clicked action performed on SIGNUP/LOGINbutton
+2018-07-02 11:50:29,447 - Log -INFO - Click action performed on Continue with Facebook.
+2018-07-02 11:50:30,711 - Log -INFO - Facebook valid id is enetered in ID edit field.
+2018-07-02 11:50:35,851 - Log -INFO - FacebooK valid password is enetered in password edit field.
+2018-07-02 11:50:52,422 - Log -INFO - Click action performed to login button.
+2018-07-02 11:50:52,425 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:50:54,935 - Log -INFO - Chrome Driver initiated 
+2018-07-02 11:51:03,081 - Log -INFO - Fitbase home page opened
+2018-07-02 11:51:04,340 - Log -INFO - Clicked action performed on SIGNUP AS TRAINER button
+2018-07-02 11:51:15,513 - Log -INFO - Clicked action performed on SIGNUP/LOGINbutton
+2018-07-02 11:51:23,493 - Log -INFO - Click action performed on clickongmailbutton.
+2018-07-02 11:51:26,781 - Log -INFO - Entered valid Gmail ID
+2018-07-02 11:51:30,001 - Log -INFO - Click action performed on GmailNextButton.
+2018-07-02 11:51:32,165 - Log -INFO - Entered valid Gmail Password
+2018-07-02 11:51:32,288 - Log -INFO - Click action performed on GmailNextButton.
+2018-07-02 11:51:32,289 - Log -INFO - ****************************TestEnd****************************
+2018-07-02 11:51:37,196 - Log -INFO - Chrome Driver initiated 
