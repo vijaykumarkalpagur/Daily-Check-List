@@ -22,7 +22,6 @@ public static void FacebookLogin(String Facebookid,String FacebookPswd) throws E
 
 @AfterClass
 public void teardown() throws Exception{	
-	Thread.sleep(3000);
 	Log.Succesful("Successfully validated Facebook Login functionality with valid inputs");}	
 }
 

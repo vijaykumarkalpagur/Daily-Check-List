@@ -1362,3 +1362,52 @@
 2018-06-29 17:36:10,101 - Log -INFO - Click action performed on Publish Button.
 2018-06-29 17:36:13,257 - Log -INFO - Successfully validated Weekly Session functionlity with using normal Login with valid inputs
 2018-06-29 17:36:18,909 - Log -INFO - Chrome Driver initiated 
+2018-06-29 17:48:17,608 - Log -INFO - Chrome Driver initiated 
+2018-06-29 17:48:45,347 - Log -INFO - Fitbase home page opened
+2018-06-29 17:48:46,623 - Log -INFO - Clicked action performed on SIGNUP AS TRAINER button
+2018-06-29 17:48:57,738 - Log -INFO - Clicked action performed on SIGNUP/LOGINbutton
+2018-06-29 17:49:02,914 - Log -INFO - Entered Trainer valid username
+2018-06-29 17:49:03,052 - Log -INFO - Entered Trainer valid Password
+2018-06-29 17:49:43,075 - Log -INFO - Click action performed on Loginbutton.
+2018-06-29 17:49:58,952 - Log -INFO - ****************************TestEnd****************************
+2018-06-29 17:50:00,857 - Log -INFO - Chrome Driver initiated 
+2018-06-29 17:50:31,340 - Log -INFO - Fitbase home page opened
+2018-06-29 17:50:32,607 - Log -INFO - Clicked action performed on SIGNUP AS TRAINER button
+2018-06-29 17:50:43,705 - Log -INFO - Clicked action performed on SIGNUP/LOGINbutton
+2018-06-29 17:50:50,870 - Log -INFO - Click action performed on Continue with Facebook.
+2018-06-29 17:50:52,058 - Log -INFO - Facebook valid id is enetered in ID edit field.
+2018-06-29 17:50:57,198 - Log -INFO - FacebooK valid password is enetered in password edit field.
+2018-06-29 17:51:14,281 - Log -INFO - Click action performed to login button.
+2018-06-29 17:51:17,282 - Log -INFO - ****************************TestEnd****************************
+2018-06-29 17:51:19,200 - Log -INFO - Chrome Driver initiated 
+2018-06-29 17:51:39,888 - Log -INFO - Fitbase home page opened
+2018-06-29 17:51:41,145 - Log -INFO - Clicked action performed on SIGNUP AS TRAINER button
+2018-06-29 17:51:52,254 - Log -INFO - Clicked action performed on SIGNUP/LOGINbutton
+2018-06-29 17:51:59,432 - Log -INFO - Click action performed on clickongmailbutton.
+2018-06-29 17:52:02,686 - Log -INFO - Entered valid Gmail ID
+2018-06-29 17:52:05,909 - Log -INFO - Click action performed on GmailNextButton.
+2018-06-29 17:52:08,051 - Log -INFO - Entered valid Gmail Password
+2018-06-29 17:52:08,206 - Log -INFO - Click action performed on GmailNextButton.
+2018-06-29 17:52:11,208 - Log -INFO - ****************************TestEnd****************************
+2018-06-29 17:52:13,152 - Log -INFO - Chrome Driver initiated 
+2018-06-29 17:52:23,898 - Log -INFO - Fitbase home page opened
+2018-06-29 17:52:32,375 - Log -INFO - Chrome Driver initiated 
+2018-06-29 17:52:53,378 - Log -INFO - Fitbase home page opened
+2018-06-29 17:52:57,621 - Log -INFO - Clicked action performed on SIGNUP AS TRAINER button
+2018-06-29 17:53:04,726 - Log -INFO - Clicked action performed on SIGNUP/LOGINbutton
+2018-07-02 11:27:42,840 - Log -INFO - Chrome Driver initiated 
+2018-07-02 11:27:44,463 - Log -INFO - Fitbase home page opened
+2018-07-02 11:27:45,798 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/vendor.css' [2290:3] Error in declaration. '*' is not allowed as first char of a property.
+2018-07-02 11:27:45,798 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/vendor.css' [2291:3] Error in declaration. '*' is not allowed as first char of a property.
+2018-07-02 11:27:45,843 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/vendor.css' [5356:17] Error in expression; ':' found after identifier "progid".
+2018-07-02 11:27:45,889 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/vendor.css' [8453:17] Error in expression; ':' found after identifier "progid".
+2018-07-02 11:27:45,890 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/vendor.css' [8463:17] Error in expression; ':' found after identifier "progid".
+2018-07-02 11:27:46,757 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/home.css' [2504:3] Error in declaration. '*' is not allowed as first char of a property.
+2018-07-02 11:27:46,763 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/home.css' [2941:17] Error in expression; ':' found after identifier "progid".
+2018-07-02 11:27:46,763 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/home.css' [2951:17] Error in expression; ':' found after identifier "progid".
+2018-07-02 11:27:46,764 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/home.css' [2961:17] Error in expression; ':' found after identifier "progid".
+2018-07-02 11:27:46,764 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/home.css' [2971:17] Error in expression; ':' found after identifier "progid".
+2018-07-02 11:27:46,766 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/home.css' [2981:17] Error in expression; ':' found after identifier "progid".
+2018-07-02 11:27:46,780 - com.gargoylesoftware.htmlunit.DefaultCssErrorHandler -WARN - CSS error: 'http://fitbase-acp-1089568855.us-west-2.elb.amazonaws.com/stylesheets/home.css' [5367:32] Error in expression. (Invalid token ".". Was expecting one of: <S>, <NUMBER>, "inherit", <IDENT>, <STRING>, ")", ":", "-", "=", <PLUS>, <COMMA>, <HASH>, <EMS>, <EXS>, <LENGTH_PX>, <LENGTH_CM>, <LENGTH_MM>, <LENGTH_IN>, <LENGTH_PT>, <LENGTH_PC>, <ANGLE_DEG>, <ANGLE_RAD>, <ANGLE_GRAD>, <TIME_MS>, <TIME_S>, <FREQ_HZ>, <FREQ_KHZ>, <RESOLUTION_DPI>, <RESOLUTION_DPCM>, <PERCENTAGE>, <DIMENSION>, <URI>, <FUNCTION>.)
+2018-07-02 11:27:47,668 - Log -INFO - Clicked action performed on SIGNUP AS TRAINER button
+2018-07-02 11:27:57,940 - Log -INFO - Clicked action performed on SIGNUP/LOGINbutton

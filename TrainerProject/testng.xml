@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-    
-      <class name="dailychecklist.SingleWorkoutSession"/>
-     
 
+	<listeners>
+      		<listener class-name="com.trainer.qa.utility.Retry"/>
+      		<listener class-name="com.trainer.qa.utility.ExtendReport"/>
+ 	 </listeners>
+
+  <test thread-count="5" name="Logins Test">
+    <classes>
+      <class name="dailychecklist.LoginTest"/>
+      <class name="dailychecklist.FacebookLoginTest"/>
+      <class name="dailychecklist.GmailLoginTest"/>
     </classes>
+   </test> <!-- Test -->
+      
+  <test thread-count="5" name="Create Schedule Test">
+     <classes>
+    	 <class name="dailychecklist.SingleWorkoutSession"/>
+    	 <class name="dailychecklist.DailyWorkoutSessionTest"/>
+         <class name="dailychecklist.WeeklyWorkoutSessionsTest"/>
+	     <class name="dailychecklist.MonthlyWorkoutSession"/>
+         <class name="dailychecklist.CustomWorkoutSessionsTest"/>
+    </classes>
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -26,7 +26,6 @@ public void TrainerLogin(String Username ,String Password) throws Exception{
 @AfterClass
    public void teardown() throws Exception{	
 	CloseBrowserAction.Application(Browserhelper.driver);
-	Thread.sleep(3000);
 	Log.Succesful("Successfully validated Normal Login functionality with valid inputs");}	
 }
 

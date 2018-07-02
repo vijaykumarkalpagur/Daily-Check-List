@@ -21,8 +21,7 @@ public static void GmailLogin(String Gmailid,String GmailPswd) throws Exception{
 	GmailAction.socialGmailLogin(Browserhelper.driver, Gmailid, GmailPswd);}
 
 @AfterClass
-public void teardown() throws Exception{	
-	Thread.sleep(3000);
+public void teardown() throws Exception{
 	Log.Succesful("Successfully validated Gmail Login functionality with valid inputs");}	
 }
 

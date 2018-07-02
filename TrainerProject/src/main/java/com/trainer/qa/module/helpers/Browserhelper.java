@@ -7,13 +7,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.Test;
+
 import com.trainer.qa.utility.Log;
 
 public class Browserhelper {
 
 	public static WebDriver driver;
 
+	@Test
 	public static WebDriver openBrowser() throws Exception{
 
 	Properties prop = new Properties() ;
@@ -25,6 +29,7 @@ public class Browserhelper {
 		if(browserName.equalsIgnoreCase("Chrome")){
 				System.setProperty("webdriver.chrome.driver", "C:\\Users\\Vijay\\workspace\\TrainerProject\\chromedriver.exe");	
 				driver = new ChromeDriver();
+//				driver = new HtmlUnitDriver();
 				Log.info("Chrome Driver initiated ");}
 		
 		else if(browserName.equalsIgnoreCase("FireFox")){
